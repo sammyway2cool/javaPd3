@@ -43,7 +43,7 @@ class Main {
     NOTE: Does it look correct, check with a calculator?
 */
 double avg = (grade1 + grade2 + grade3) / 3;
-System.out.println(avg);
+System.out.println("avg is" +avg);
 
 /*  
     Challenge 4:
@@ -51,8 +51,8 @@ System.out.println(avg);
     Declare and assign values to any new variables
 
 */
-int x = 2;
-int A = 3;
+double x = 2;
+double = 3;
 double y = A / (x + 1); 
 System.out.println(y);
 /*  
