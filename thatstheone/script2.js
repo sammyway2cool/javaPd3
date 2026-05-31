@@ -1,4 +1,4 @@
-let data,Members;
+let data,Player;
 
   async function init(){
   let link = "https://reimagined-space-rotary-phone-r464rpr65vw93x9wx-8500.app.github.dev";
@@ -16,11 +16,9 @@ function generatecards(Player){
   for(let i=0; i<Player.length; i++){
     let play = Player[i]
     build += `<div class="card" >`
-    build += `<h3> Member Name : ${play.Players}</h3>`;
-    build += `<div> amount of games bought  : ${play.Clubs}</div>`;
-    build += `<div> Age : ${play.MaxContracts}</div>`;
-    build += `<div> Payment type  : ${Member.Paymenttype}</div>`;
-    build += `<p> Email : ${Member.Gmail}</p>`;
+    build += `<h3> Players : ${play.Players}</h3>`;
+    build += `<div> Clubs  : ${play.Clubs}</div>`;
+    build += `<div> Max Contracts : ${play.MaxContracts}</div>`;
     build += `<hr>`;
     build += `</div>`;
   }
@@ -33,20 +31,20 @@ function generatecards(Player){
 
 
 function filter(){
-  let card = document.getElementById("card").value;
-  console.log(card);
-  Members = data;
-  let cardlist = []; 
+  let club = document.getElementById("club").value;
+  console.log(club);
+  Player = data;
+  let playerlist = []; 
   
-  for(let i=0; i<Members.length; i++){
-    let Member = Members[i] 
+  for(let i=0; i<Player.length; i++){
+    let Play = Player[i] 
     
-    if( Member.Paymenttype == card) {
+    if( Play.Clubs == club) {
         
-          cardlist.push(Member);
+          playerlist.push(Play);
        }
   }
-  console.log(`number found ${cardlist.length}`)
-  generatecards(cardlist);
+  console.log(`number found ${playerlist.length}`)
+  generatecards(playerlist);
   
 }

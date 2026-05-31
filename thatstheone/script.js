@@ -1,5 +1,5 @@
 
-let Data,Games;
+let Data,Manager;
 
 async function init(){
   let link = "https://reimagined-space-rotary-phone-r464rpr65vw93x9wx-8500.app.github.dev";
