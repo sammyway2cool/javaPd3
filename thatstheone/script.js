@@ -17,10 +17,10 @@ async function init(){
   for(let i=0; i<Manager.length; i++){
     let Man = Manager[i];
     front = `<h2> Manager Name:  ${Man.Managers}</h2>`;
-    front += `<img src='Images/${Man.images}.png'>`
+    front += `<img src='images/${Man.images}.png'>`
 
     back = `<p> Clubs: ${Man.Clubs}</p>`;
-    back+= `<p> Net Worth: ${Man.Networth}</p>`;
+    back+= `<p> Net Worth: ${Man.NetWorth}</p>`;
     back+= `<hr>`;
 
     card = new FlipCard(front,back);
